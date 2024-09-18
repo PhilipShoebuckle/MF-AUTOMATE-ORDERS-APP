@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Update Data</title>
+</head>
+<body onload="currentUpload()">
+    <h1>Update Data</h1>
+    <p><a href="index.html">back</a></p>
+    <p>Current Folder:</p>
+    <p id="currFolder"></p>
+    <label>Set Folder Path: </label>
+    <input type="text" id="inputFolder">
+    <button onclick="setFolder()"> Save </button>
+    <br><br>
+    <p>Table updated until: <span id="ldt"></span></p>
+    <br>
+    <button onclick="uploadData()">Update Table</button>
+    <p id="status"></p>
+    <script src="render.js"></script>
+</body>
+</html>

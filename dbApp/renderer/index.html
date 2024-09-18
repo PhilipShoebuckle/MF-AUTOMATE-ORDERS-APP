@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MF Orders Database</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body onload="currentHome()">
+    <h1>MF Orders Database</h1>
+    <p>Current Server: <span id="server"></span></p>
+    <label>Set Server: </label>
+    <input type="text" id="inputServer">
+    <button onclick="setServer()"> Save </button>
+    <p>Current Database: <span id="db"></span></p>
+    <label>Set Database: </label>
+    <input type="text" id="inputDB">
+    <button onclick="setDB()"> Save </button>
+    <p>Current Table: <span id="table"></span></p>
+    <label>Set Table: </label>
+    <input type="text" id="inputTable">
+    <button onclick="setTable()"> Save </button>
+    <p><a href="uploadData.html">Upload Data</a></p>
+    <script src="render.js"></script>
+  </body>
+</html>
